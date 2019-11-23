@@ -1,3 +1,22 @@
 language: java
 notifications:
   email: false
+sudo: false # faster builds
+cache:
+  directories:
+  - $HOME/.m2
+
+before_install:
+  # ignore travis settings.xml
+  - rm -f $HOME/.m2/settings.xml
+#   # uncomment below when investigating
+#   # maven behaviour
+#   - mvn help:effective-pom
+#   - mvn help:effective-settings
+
+jdk:
+  - openjdk8
+
+# code coverage
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
