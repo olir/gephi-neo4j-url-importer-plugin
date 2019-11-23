@@ -1,5 +1,6 @@
 # gephi-neo4j-url-importer-plugin
 [![Build Status](https://travis-ci.org/olir/gephi-neo4j-url-importer-plugin.png)](https://travis-ci.org/olir/gephi-neo4j-url-importer-plugin/builds)
+[![Downloads](https://img.shields.io/github/downloads/olir/gephi-neo4j-url-importer-plugin/0.2/total.svg)](https://github.com/olir/gephi-neo4j-url-importer-plugin/releases/tag/0.2)
 
 ## About
 A [gephi](http://www.gephi.org) plugin to import from a [neo4j](http://neo4j.com) database via bolt protocol.
