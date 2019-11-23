@@ -3,7 +3,7 @@
 [![Downloads](https://img.shields.io/github/downloads/olir/gephi-neo4j-url-importer-plugin/0.2/total.svg)](https://github.com/olir/gephi-neo4j-url-importer-plugin/releases/tag/0.2)
 
 ## About
-A [gephi](http://www.gephi.org) plugin to import from a [neo4j](http://neo4j.com) database via bolt protocol.
+A [gephi](http://www.gephi.org) v0.9+ plugin to import from a [neo4j](http://neo4j.com) database via bolt protocol.
 
 ## Installation
 Build nbm file from source or download from releases. In gephi install nbm over Tools->Plugins->Downloaded->Add Plugins...
