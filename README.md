@@ -13,3 +13,5 @@ Choose File->Import Database->Neo4j..., then update hostname, port, username and
 Node labels and releationship type will be mapped to properties-
 
 Cypher queries can be adjusted for filtering, but keep the node and relationship variables (n,r,m) or the query will fail.
+
+![Importer Dialog](https://raw.githubusercontent.com/olir/gephi-neo4j-url-importer-plugin/master/src/site/gephi-neo4j-import.JPG)
