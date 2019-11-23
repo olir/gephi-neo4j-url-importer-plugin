@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>gephi-plugin-parent</artifactId>
+        <groupId>org.gephi</groupId>
+        <version>0.9.1</version>
+    </parent>
+
+    <groupId>de.serviceflow</groupId>
+    <artifactId>neo4j-url-importer-plugin</artifactId>
+    <version>0.2.0</version>
+    <packaging>nbm</packaging>
+
+    <name>Neo4j Url Import Plugin</name>
+
+    <!-- License -->
+    <licenses>
+        <license>
+            <name>Apache 2.0</name>
+            <url>http://www.opensource.org/licenses/Apache-2.0</url>
+            <comments>Apache License, Version 2.0</comments>
+        </license>
+    </licenses>
+
+     <!-- Properties -->
+    <properties>
+        <!-- Version of Gephi building plugins against. Plugins with anterior versions will be ignored -->
+        <gephi.version>0.9.1</gephi.version>
+    </properties>
+    
+    <!-- Dependencies -->
+    <dependencies>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-openide-util</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-openide-util-ui</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-openide-dialogs</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-openide-dialogs</artifactId>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-openide-filesystems</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.gephi</groupId>
+            <artifactId>db-drivers</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.gephi</groupId>
+            <artifactId>graph-api</artifactId>
+            <version>${gephi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.gephi</groupId>
+            <artifactId>io-importer-api</artifactId>
+            <version>${gephi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.gephi</groupId>
+            <artifactId>utils-longtask</artifactId>
+            <version>${gephi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.gephi</groupId>
+            <artifactId>io-importer-plugin</artifactId>
+            <version>${gephi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.gephi</groupId>
+            <artifactId>ui-utils</artifactId>
+            <version>${gephi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.gephi</groupId>
+            <artifactId>ui-library-wrapper</artifactId>
+            <version>${gephi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.gephi</groupId>
+            <artifactId>lib.validation</artifactId>
+            <version>${gephi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.gephi</groupId>
+            <artifactId>utils</artifactId>
+            <version>${gephi.version}</version>
+        </dependency>
+
+        <dependency>
+          <groupId>org.neo4j.driver</groupId>
+          <artifactId>neo4j-java-driver</artifactId>
+          <version>1.7.5</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>nbm-maven-plugin</artifactId>
+                <configuration>
+                    <author>Oliver Rode.</author>
+                    <licenseName>CDDL</licenseName>
+                    <licenseFile>LICENSE.txt</licenseFile>                    
+                    <sourceCodeUrl>http://github.com/olir/gephi-neo4j-url-importer-plugin</sourceCodeUrl>
+                    <homePageUrl>http://github.com/olir/gephi-neo4j-url-importer-plugin</homePageUrl>
+                    <publicPackages>de.serviceflow.gephi.plugin</publicPackages>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

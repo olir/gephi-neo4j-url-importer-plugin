@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Localizing-Bundle: de/serviceflow/gephi/plugin/neo4j/url/importer/Bundle.properties
+AutoUpdate-Essential-Module: false
