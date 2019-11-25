@@ -16,3 +16,6 @@ Node labels and releationship type will be mapped to properties-
 Cypher queries can be adjusted for filtering, but keep the node and relationship variables (n,r,m) or the query will fail.
 
 ![Importer Dialog](https://raw.githubusercontent.com/olir/gephi-neo4j-url-importer-plugin/master/src/site/gephi-neo4j-import.JPG)
+
+### Connecting to a remote neo4j container
+Since the import operation may take a while, depending on the size of your database, keep in mind that you may need to increase timeouts for  the container. E.g. for a openshift port-forward you can archive this with --request-timeout=240m
